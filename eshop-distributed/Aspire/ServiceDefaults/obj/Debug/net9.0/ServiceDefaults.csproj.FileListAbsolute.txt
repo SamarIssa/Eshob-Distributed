@@ -1,0 +1,13 @@
+E:\Samar\Samar.EshopDistributed\eshop-distributed\Aspire\ServiceDefaults\bin\Debug\net9.0\ServiceDefaults.deps.json
+E:\Samar\Samar.EshopDistributed\eshop-distributed\Aspire\ServiceDefaults\bin\Debug\net9.0\ServiceDefaults.dll
+E:\Samar\Samar.EshopDistributed\eshop-distributed\Aspire\ServiceDefaults\bin\Debug\net9.0\ServiceDefaults.pdb
+E:\Samar\Samar.EshopDistributed\eshop-distributed\Aspire\ServiceDefaults\obj\Debug\net9.0\ServiceDefaults.csproj.AssemblyReference.cache
+E:\Samar\Samar.EshopDistributed\eshop-distributed\Aspire\ServiceDefaults\obj\Debug\net9.0\ServiceDefaults.GeneratedMSBuildEditorConfig.editorconfig
+E:\Samar\Samar.EshopDistributed\eshop-distributed\Aspire\ServiceDefaults\obj\Debug\net9.0\ServiceDefaults.AssemblyInfoInputs.cache
+E:\Samar\Samar.EshopDistributed\eshop-distributed\Aspire\ServiceDefaults\obj\Debug\net9.0\ServiceDefaults.AssemblyInfo.cs
+E:\Samar\Samar.EshopDistributed\eshop-distributed\Aspire\ServiceDefaults\obj\Debug\net9.0\ServiceDefaults.csproj.CoreCompileInputs.cache
+E:\Samar\Samar.EshopDistributed\eshop-distributed\Aspire\ServiceDefaults\obj\Debug\net9.0\ServiceDefaults.sourcelink.json
+E:\Samar\Samar.EshopDistributed\eshop-distributed\Aspire\ServiceDefaults\obj\Debug\net9.0\ServiceDefaults.dll
+E:\Samar\Samar.EshopDistributed\eshop-distributed\Aspire\ServiceDefaults\obj\Debug\net9.0\refint\ServiceDefaults.dll
+E:\Samar\Samar.EshopDistributed\eshop-distributed\Aspire\ServiceDefaults\obj\Debug\net9.0\ServiceDefaults.pdb
+E:\Samar\Samar.EshopDistributed\eshop-distributed\Aspire\ServiceDefaults\obj\Debug\net9.0\ref\ServiceDefaults.dll
