@@ -8,22 +8,23 @@ GET {{Catalog_HostAddress}}/1
 Accept: application/json
 ###
 POST {{Catalog_HostAddress}}/
-Accept: application/json
+Content-Type: application/json
 {
-  "id": 1,
-  "name": "Test Product",
-  "description": "Test Description",
-  "price": 10.99,
-  "category": "Test Category"
+    "id": 10,
+    "name": "NEW Swn Flashlight",
+    "description": "A NEW swn product for outdoor enthusiasts",
+    "price": 59.99,
+    "imageUrl": "product10.png"
 }
+
 ###
 PUT {{Catalog_HostAddress}}/1
-Accept: application/json
-{
-  "name": "Updated Product",
-  "description": "Updated Description",
-  "price": 12.99,
-  "category": "Updated Category"
+Content-Type: application/json
+{    
+    "name": "Solar Powered Flashlight",
+    "description": "A fantastic product for outdoor enthusiasts",
+    "price": 5.99,
+    "imageUrl": "product1.png"
 }
 ###
 DELETE {{Catalog_HostAddress}}/1

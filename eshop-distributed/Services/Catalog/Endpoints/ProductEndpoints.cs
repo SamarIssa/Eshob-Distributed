@@ -7,7 +7,7 @@ namespace Catalog.Endpoints
     {
         public static void MapProductEndpoints(this IEndpointRouteBuilder routes)
         {
-            var group = routes.MapGroup("/products").WithTags("Products");
+            var group = routes.MapGroup("/products");
             group.MapGet("/", async (ProductService productService) =>
             {
                 var products = await productService.GetProductsAsync();
@@ -32,7 +32,7 @@ namespace Catalog.Endpoints
             })
             .WithName("CreateProduct")
             .Produces<Product>(StatusCodes.Status201Created);
-
+          
             group.MapPut("/{id:int}", async (int id, Product inputProduct, ProductService productService) =>
             {
                 var updatedProduct = await productService.GetProductByIdAsync(id);

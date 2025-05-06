@@ -1,3 +1,5 @@
+using Aspire.Hosting;
+
 var builder = DistributedApplication.CreateBuilder(args);
 
 //add projects and cloud native backing services
@@ -15,16 +17,26 @@ var cache =
     .WithDataVolume()
     .WithLifetime(ContainerLifetime.Persistent);
 
+var rabbitMq =
+    builder.AddRabbitMQ("rabbitmq")
+    .WithManagementPlugin()
+    .WithDataVolume()
+    .WithLifetime(ContainerLifetime.Persistent);
+
 var catalog =
     builder.AddProject<Projects.Catalog>("catalog")
     .WithReference(catalogDb)
-    .WaitFor(catalogDb);
+    .WithReference(rabbitMq)
+    .WaitFor(catalogDb)
+    .WaitFor(rabbitMq);
 
 var basketDb =
     builder.AddProject<Projects.Basket>("basket")
       .WithReference(cache)
       .WithReference(catalog)
-      .WaitFor(cache);
+        .WithReference(rabbitMq)
+      .WaitFor(cache)
+      .WaitFor(rabbitMq);
 
 
 

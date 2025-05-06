@@ -1,6 +1,9 @@
 using Catalog.Data;
 using Catalog.Endpoints;
 using Catalog.Services;
+using MassTransit;
+using ServiceDefaults.Messages;
+using System.Reflection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +13,7 @@ builder.AddServiceDefaults();
 
 builder.AddNpgsqlDbContext<ProductDbContext>(connectionName: "catalogDb");
 builder.Services.AddScoped<ProductService>();
+builder.Services.AddMassTransitWithAssemblies(Assembly.GetExecutingAssembly());
 
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
