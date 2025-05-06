@@ -1,7 +1,6 @@
 using Catalog.Data;
 using Catalog.Endpoints;
 using Catalog.Services;
-using MassTransit;
 using ServiceDefaults.Messages;
 using System.Reflection;
 
