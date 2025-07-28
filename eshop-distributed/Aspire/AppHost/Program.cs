@@ -38,4 +38,14 @@ var basketDb =
 
 
 
+builder.AddProject<Projects.WebApp>("webapp")
+    .WithExternalHttpEndpoints()
+    .WithReference(catalog)
+    .WithReference(basketDb)
+    .WaitFor(basketDb)
+    .WaitFor(catalog);
+    ;
+
+
+
 builder.Build().Run();
