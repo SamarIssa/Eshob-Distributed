@@ -9,6 +9,7 @@ builder.Services.AddHttpClient<CatalogApiClient>(client =>
 {
     client.BaseAddress = new ("https+http://catalog");
 });
+builder.AddRedisOutputCache("redis");
 
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
@@ -17,6 +18,7 @@ var app = builder.Build();
 
 app.MapDefaultEndpoints();
 
+app.UseOutputCache();   
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {

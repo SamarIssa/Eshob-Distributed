@@ -29,3 +29,18 @@ Content-Type: application/json
 ###
 DELETE {{Catalog_HostAddress}}/1
 Accept: application/json
+
+### Support AI
+
+GET {{Catalog_HostAddress}}/support/give-me-1-outdoor-activity
+Accept: application/json
+
+### Traditional Search
+
+GET {{Catalog_HostAddress}}/search/Hiking
+Accept: application/json
+
+### AI Search
+
+GET {{Catalog_HostAddress}}/aisearch/Something_for_rainy_days
+Accept: application/json
